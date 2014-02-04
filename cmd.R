@@ -1,5 +1,5 @@
 #mv
-mv(input, output){
+mv <- function(input, output){
 	cmdline <- paste(
 	  "mv", input, output,
 	  sep=" ")
@@ -7,7 +7,7 @@ mv(input, output){
 }
 
 #cp
-cp(input, output){
+cp <- function(input, output){
 	cmdline <- paste(
 	  "cp", input, output,
 	  sep=" ")
@@ -15,7 +15,7 @@ cp(input, output){
 }
 
 #sox example
-sox(input, output){ 
+sox <- function(input, output){ 
 	cmdline <- paste(
 	  "sox ", input, " -r 8000 -c 1 ", output, " trim 0 20",
 	  sep="")
@@ -23,7 +23,7 @@ sox(input, output){
 }
 
 #convert
-png2eps(input, output){
+convert <- function(input, output){
 	cmdline <- paste(
 	  "convert", input, output,
 	  sep=" ")

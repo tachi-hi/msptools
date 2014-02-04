@@ -1,4 +1,3 @@
-
 #mv
 mv(input, output){
 	cmdline <- paste(
@@ -23,3 +22,10 @@ sox(input, output){
 	system(cmdline)
 }
 
+#convert
+png2eps(input, output){
+	cmdline <- paste(
+	  "convert", input, output,
+	  sep=" ")
+	system(cmdline)
+}

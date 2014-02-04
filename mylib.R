@@ -55,4 +55,4 @@ spectrogram <- function(wave){
   tmp <- stft.half(wave, len,shi);
 	image((1:length(tmp[,1]) - 1)*shi/8000, (1:length(tmp[1,]) - 1)/shi*4000,-powscale(tmp),col=rbcol,
 	     xlab = "Time [s]", ylab="Frequency [Hz]"); 
-
+}

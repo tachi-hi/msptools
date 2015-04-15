@@ -19,8 +19,9 @@ SER <- function(
 }
 
 
-# test.SER
-if(1){
+# test SER
+# R --slave < ser.R
+if( !interactive() ){
 	sinewave <- function(freq) sin(1:160000 / 16000 * freq * 2 * pi)
 	a <- sin(1:160000 / 16000 * 440 * 2 * pi)
 	b <- sinewave(440) + sinewave(880)/2 + sinewave(1320)/3 + sinewave(1760)/4 + sinewave(3080) / 7
